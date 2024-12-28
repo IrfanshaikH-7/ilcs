@@ -15,9 +15,9 @@ const Home = () => {
         </div>
         
         {/* Hero Content */}
-        <div className="relative z-10 h-full flex items-end md:items-center">
-          <div className="container mx-auto md:px-4">
-            <h1 className=" md:max-w-4xl text-5xl md:text-7xl font-semibold     bg-gradient-to-br from-orange-500 from-10% via-480% via-gray-200 to-80% to-green-500 bg-clip-text text-transparent">Empowering communities through <span className="text-primary">Cooperative Efforts</span></h1>
+        <div className="relative z-10 h-full flex items-end justify-start md:items-center">
+          <div className="container md:px-4">
+            <h1 className=" md:max-w-4xl text-5xl md:text-7xl font-semibold    bg-gradient-to-br from-orange-500 from-10% via-480% via-gray-200 to-80% to-green-500 bg-clip-text text-transparent">Empowering communities through <span className="text-primary">Cooperative Efforts</span></h1>
           </div>
         </div>
       </section>
