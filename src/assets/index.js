@@ -1,4 +1,4 @@
-import logo from './images/logo.avif'
+import logo from './images/logo.png'
 import agri_drone from './images/home/agri-drone.png'
 import eia_logo from './images/home/eai-logo.png'
 import pm_1 from './images/home/pm-1.avif'
