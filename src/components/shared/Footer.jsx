@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className='p-2'>
 
 
-    <main className='bg-black h-full md:h-60 py-8 flex-col md:flex-row flex items-start md:items-center justify-between px-20 rounded-xl'>
+    <main className='bg-black h-full md:h-60 py-8 flex-col md:flex-row flex items-start md:items-center justify-between px-4 md:px-20 rounded-xl'>
       {/* logo */}
      <div className='flex flex-col items-start justify-center'>
       <h1 className='text-4xl font-bold flex items-center flex-row'>
