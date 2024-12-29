@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { logo } from '../../assets';
+import { logo, seventy_five_years, logo_short, thirty_years } from '../../assets';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
@@ -50,6 +50,7 @@ const Navbar = () => {
         scrolled || !isHomePage ? 'py-2' : 'py-4'
       }`}>
         {/* Logo */}
+        <div className='flex gap-4'>
         <Link 
           to="/" 
           className={`font-bold transition-all duration-500 ${
@@ -57,13 +58,43 @@ const Navbar = () => {
           }`}
         >
           <img 
-            src={logo} 
+            src={logo_short} 
             alt="logo" 
-            className={`w-auto transition-all duration-500 ${
+            className={`w-auto transition-all duration-500 scale-90  ${
               scrolled || !isHomePage ? 'h-10 md:h-16' : 'h-12 md:h-24'
             }`} 
           />
         </Link>
+        <Link 
+          to="/" 
+          className={`font-bold transition-all duration-500 ${
+            scrolled || !isHomePage ? 'text-gray-800 text-xl' : 'text-gray-800 text-2xl'
+          }`}
+        >
+          <img 
+            src={seventy_five_years} 
+            alt="logo" 
+            className={`w-auto transition-all duration-500 scale-90 ${
+              scrolled || !isHomePage ? 'h-10 md:h-16' : 'h-12 md:h-24'
+            }`} 
+          />
+        </Link>
+        <Link 
+          to="/" 
+          className={`font-bold transition-all duration-500 ${
+            scrolled || !isHomePage ? 'text-gray-800 text-xl' : 'text-gray-800 text-2xl'
+          }`}
+        >
+          <img 
+            src={thirty_years} 
+            alt="logo" 
+            className={`w-auto transition-all duration-500 scale-90 ${
+              scrolled || !isHomePage ? 'h-10 md:h-16' : 'h-12 md:h-24'
+            }`} 
+          />
+        </Link>
+        </div>
+     
 
         {/* Navigation Links */}
         <div className=" items-center gap-8 hidden md:flex">

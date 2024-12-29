@@ -3,6 +3,8 @@ import ImageOverlay from '../components/shared/ImageOverlay'
 import AboutMission from '../components/home/AboutMission'
 import BharatEntrepreneurshipSubmit from '../components/home/BharatEntrepreneurshipSubmit'
 import OurVision from '../components/home/OurVision'
+import ContentSection from '../components/home/ContentSection'
+import { firesafety } from '../assets'
 
 const Home = () => {
   return (
@@ -28,6 +30,15 @@ const Home = () => {
       <AboutMission />
       <BharatEntrepreneurshipSubmit />
       <OurVision />
+      <ContentSection
+      title='Comprehensive Fire Safety Systems  '
+      content='left'
+      descriptions={['We supply and install advanced fire safety systems for residential, commercial, and industrial premises. Our offerings include fire suppressants, extinguishers, alarms, and detection systems. We ensure fire safety through regular maintenance, inspections, and training programs.',
+
+        "Our solutions detect, alert, and suppress fires efficiently, minimizing damage. Our detection systems include smoke and heat detectors, integrated with control panels for prompt response. Additionally, we offer foam, gas, and powder-based fire suppressants from leading manufacturers, ensuring reliability in emergencies."
+      ]}
+      image={firesafety}
+      />
       </section>
  
     </main>

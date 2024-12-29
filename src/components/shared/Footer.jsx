@@ -1,5 +1,6 @@
 import { section } from 'framer-motion/client'
 import React from 'react'
+import { logo } from '../../assets'
 
 
 export default function Footer() {
@@ -12,8 +13,8 @@ export default function Footer() {
      <div className='flex flex-col items-start justify-center'>
       <h1 className='text-4xl font-bold flex items-center flex-row'>
       <div className=' mt-2 flex flex-col '>
-        <div className='h-20 w-60 bg-white rounded-lg items-center justify-center flex'>
-          logo
+        <div className='h-20 w-60 px-2 bg-white rounded-lg items-center justify-center flex'>
+     <img src={logo} alt="logo" className='w-auto object-contain h-10 md:h-full' /> 
 
         </div>
         <span className='text-orange-500'>lorem ipsum</span>
