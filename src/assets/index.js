@@ -15,7 +15,18 @@ import amit_shah from './images/home/amit-shah.avif'
 import firefighting_drone from './images/home/firefighting-drone.png'
 import sea_plane from './images/home/sea-plane.jpg'
 
+import ministry_of_corporation from './images/logos/ministry_of_corporation.png'
+import ministry_of_labour from './images/logos/ministry_of_labour.png'
+import msme from './images/logos/msme.png'
+import niti_aayog from './images/logos/niti_aayog.png'
+import zed_cert from './images/logos/zed_cert.png'
+
 export {
+    ministry_of_corporation,
+    ministry_of_labour,
+    msme,
+    niti_aayog,
+    zed_cert,
     amit_shah,
     firefighting_drone,
     sea_plane,

@@ -5,6 +5,7 @@ import BharatEntrepreneurshipSubmit from '../components/home/BharatEntrepreneurs
 import OurVision from '../components/home/OurVision'
 import ContentSection from '../components/home/ContentSection'
 import { firesafety, zed_logo } from '../assets'
+import LogoFlex from '../components/home/LogoFlex'
 
 const Home = () => {
   const overlayRef = useRef(null);
@@ -73,6 +74,7 @@ const Home = () => {
 
       <section
         className='min-h-fit py-7 space-y-[60px] md:px-0 xl:max-w-[90%] mx-auto'>
+          <LogoFlex />
         <AboutMission />
         <BharatEntrepreneurshipSubmit />
         <OurVision />
