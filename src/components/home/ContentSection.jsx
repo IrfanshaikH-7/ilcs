@@ -25,14 +25,14 @@ export default function ContentSection({
   };
   
   return (  
-    <div className="h-fit mt-4 min[900px]:px-4 w-full flex flex-col items-center justify-center gap-8 lg:gap-20 min-[900px]:flex-row mx-auto overflow-hidden">  
+    <div className="h-fit  min[900px]:px-4 max-w-full  w-full flex flex-col items-center justify-between gap-8  min-[900px]:flex-row mx-auto overflow-hidden">  
       {content !== 'right' && (
         <motion.article  
           variants={fadeUpVariants}  
           initial="hidden"  
           whileInView="visible"  
           viewport={{ once: true }}  
-          className="flex-1 flex flex-col mt-12 md:mt-0 max-w-2xl w-full lg:px-4 xl:pl-0 gap-2"  
+          className="flex-1 flex flex-col md:mt-0 max-w-full lg:max-w-2xl w-full lg:px-4 xl:pl-0 gap-2"  
         >  
           {SuperTitle && (
             <div className="relative w-fit flex flex-col">  
@@ -42,7 +42,7 @@ export default function ContentSection({
             </div> 
           )}
           {title && (
-            <h2 className="text-4xl md:text-2xl lg:text-4xl text-neutral-900 font-bold">  
+            <h2 className="text-2xl md:text-2xl lg:text-4xl text-neutral-900 font-bold">  
               {title} 
             </h2> 
           )}
@@ -51,7 +51,8 @@ export default function ContentSection({
               {subTitle}
             </p>
           )}
-          {descriptions && descriptions.length <= 0 ? (
+          {
+          descriptions && descriptions.length <= 0 ? (
             <p className="text-neutral-600 text-sm xl:text-base">
               {descriptions}
             </p>
@@ -62,22 +63,26 @@ export default function ContentSection({
               </p>
             ))
           )}
-      <button className='bg-black mt-1 rounded-3xl px-6 py-3 w-fit text-white text-sm hover:bg-black/80 hover:-rotate-1 hover:scale-105 transition-all duration-300'>Know more about it</button>
+
+          {
+            button && (
+              <button className='bg-black mt-1 rounded-3xl px-6 py-3 w-fit text-white text-sm hover:bg-black/80 hover:-rotate-1 hover:scale-105 transition-all duration-300'>Know more about it</button>
+            )
+          }
 
         </motion.article> 
       )}
-
-      <motion.div  
+      <motion.div
         variants={fadeUpVariants}  
         initial="hidden"  
         whileInView="visible"  
         viewport={{ once: true }}  
-        className="relative flex-1 aspect-[4/3] h-auto md:min-w-[400px] lg:min-w-[400px] md:max-w-[580px] lg:p-8  w-full bg-contain"  
-      >  
+        className="relative flex-1 aspect-[4/3] h-auto md:min-w-[400px] lg:min-w-[400px] md:max-w-[580px] lg:p-8 w-full bg-contain"  
+      >
         <img  
           src={image}  
           alt="stock-pc-image"  
-          className="object-cover w-full h-full rounded-md overflow-hidden "  
+          className="object-cover w-full h-full rounded-md shadow-md overflow-hidden "  
         />  
       </motion.div>  
 
@@ -115,7 +120,11 @@ export default function ContentSection({
               </p>
             ))
           )}
-           <button className='bg-black mt-1 rounded-3xl px-6 py-3 w-fit text-white text-sm hover:bg-black/80 hover:-rotate-1 hover:scale-105 transition-all duration-300'>Know more about it</button>
+          {
+            button && (
+              <button className='bg-black mt-1 rounded-3xl px-6 py-3 w-fit text-white text-sm hover:bg-black/80 hover:-rotate-1 hover:scale-105 transition-all duration-300'>Know more about it</button>
+            )
+          }
 
         </motion.article> 
       )}

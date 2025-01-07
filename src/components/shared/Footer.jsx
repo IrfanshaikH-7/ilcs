@@ -8,18 +8,18 @@ export default function Footer() {
     <footer className='p-2'>
 
 
-    <main className='bg-black h-full md:h-60 py-8 flex-col md:flex-row flex items-start md:items-center justify-between px-4 md:px-20 rounded-xl'>
+    <main className='bg-black h-full md:h-60 py-4 md:py-8 flex-col md:flex-row flex items-start md:items-center justify-between px-4 md:px-20 rounded-xl'>
       {/* logo */}
-     <div className='flex flex-col items-start justify-center'>
-      <h1 className='text-4xl font-bold flex items-center flex-row'>
-      <div className=' mt-2 flex flex-col '>
-        <div className='h-20 w-60 px-2 bg-white rounded-lg items-center justify-center flex'>
-     <img src={logo} alt="logo" className='w-auto object-contain h-10 md:h-full' /> 
+     <div className='flex w-full md:w-auto flex-col items-start justify-center'>
+      <section className='text-4xl w-full md:w-auto font-bold flex items-center flex-row'>
+      <div className=' mt-2 flex flex-col w-full '>
+        <div className='h-full md:h-20 w-full relative md:w-60 py-2 px-2 bg-white rounded-lg items-center justify-center flex'>
+     <img src={logo} alt="logo" className='w-auto object-contain  md:h-full' /> 
 
         </div>
-        <span className='text-orange-500'>lorem ipsum</span>
+        <span className='text-orange-500 text-center md:text-left mt-2'>lorem ipsum</span>
         </div>
-      </h1>
+      </section>
     
      </div>
      {/* quick links */}
@@ -52,6 +52,7 @@ export default function Footer() {
      </div>
        </div>
     </main>
+    
     </footer>
   )
 }

@@ -43,7 +43,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
         scrolled || !isHomePage
           ? 'h-[65px] bg-white' 
-          : 'h-[100px] bg-transparent'
+          : 'h-[100px] bg-white'
       }`}
     >
       <nav className={`max-w-[99%] mx-auto px-2 md:px-8 h-full flex items-center justify-between transition-all duration-500 ${
