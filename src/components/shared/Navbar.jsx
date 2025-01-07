@@ -46,6 +46,8 @@ const Navbar = () => {
           : 'h-[100px] bg-white'
       }`}
     >
+
+   
       <nav className={`max-w-[99%] mx-auto px-2 md:px-8 h-full flex items-center justify-between transition-all duration-500 ${
         scrolled || !isHomePage ? 'py-2' : 'py-4'
       }`}>

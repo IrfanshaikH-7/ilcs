@@ -1,6 +1,6 @@
 'use client'  
 import React, { useState, useEffect } from 'react';  
-import { agri_drone, pm_1, zed_logo } from '../../assets';
+import { agri_drone, pm_1, amit_shah, firefighting_drone, sea_plane } from '../../assets';
 
 import { motion } from 'framer-motion';  
 
@@ -9,7 +9,9 @@ const ImageOverlay = () => {
   const images = [  
     agri_drone,  
     pm_1,  
-    zed_logo,  
+    amit_shah, 
+    firefighting_drone,
+    sea_plane,
   ];  
 
  

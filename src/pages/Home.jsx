@@ -52,7 +52,7 @@ const Home = () => {
         {/* Image Overlay Container */}
         <div
           ref={overlayRef}
-          className="absolute inset-0 z-0 w-full  aspect-video md:aspect-auto rounded-lg overflow-hidden">
+          className="absolute inset-0 z-0 w-full md:h-[86vh] aspect-video md:aspect-auto rounded-lg overflow-hidden">
           <ImageOverlay />
         </div>
 
@@ -72,7 +72,7 @@ const Home = () => {
 
 
       <section
-        className='min-h-fit py-7 space-y-16 md:px-0 xl:max-w-[90%] mx-auto'>
+        className='min-h-fit py-7 space-y-[60px] md:px-0 xl:max-w-[90%] mx-auto'>
         <AboutMission />
         <BharatEntrepreneurshipSubmit />
         <OurVision />
@@ -142,7 +142,7 @@ const Home = () => {
         
 
         {/* services section */}
-     <section  className='py-8 space-y-0'>
+     <section  className='md:py-8 space-y-0'>
       {/* section header */}
   
      <div className='w-full py-8 h-full flex items-center justify-center'>
@@ -162,6 +162,7 @@ const Home = () => {
             "Our solutions detect, alert, and suppress fires efficiently, minimizing damage. Our detection systems include smoke and heat detectors, integrated with control panels for prompt response. Additionally, we offer foam, gas, and powder-based fire suppressants from leading manufacturers, ensuring reliability in emergencies."
           ]}
           image={firesafety}
+          button={'Know more about it'}
         />
 
         <div className='pt-12 lg:pt-0'>
@@ -171,6 +172,7 @@ const Home = () => {
           content='left'
           descriptions={"In today's competitive business landscape, Micro, Small, and Medium Enterprises (MSMEs) play a pivotal role in driving economic growth and job creation. However, to thrive in this environment, MSMEs need to adopt world-class practices in quality and sustainability. Recognizing this, the Indian Labour Cooperative Society (ILCS) has taken a significant step by partnering with the Ministry of Micro, Small, and Medium Enterprises (MSME) and the Quality Council of India (QCI) to promote the ZED (Zero Defect, Zero Effect) Certification Scheme."}
           image={zed_logo}
+          button={'Know more about it'}
         />
         </div>
       </section>

@@ -11,4 +11,13 @@ import thirty_years from './images/30yrs.png'
 
 import firesafety from './images/sections/firefight.png'
 
-export { logo,firesafety ,agri_drone, eia_logo, pm_1, zed_logo, bharat_entrepreneurship, seventy_five_years, logo_short, thirty_years }
+import amit_shah from './images/home/amit-shah.avif'
+import firefighting_drone from './images/home/firefighting-drone.png'
+import sea_plane from './images/home/sea-plane.jpg'
+
+export {
+    amit_shah,
+    firefighting_drone,
+    sea_plane,
+    logo,firesafety ,agri_drone, eia_logo, pm_1, zed_logo, bharat_entrepreneurship, seventy_five_years, logo_short, thirty_years 
+}
