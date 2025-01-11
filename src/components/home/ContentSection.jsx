@@ -34,13 +34,7 @@ export default function ContentSection({
           viewport={{ once: true }}  
           className="flex-1 flex flex-col md:mt-0 max-w-full lg:max-w-2xl w-full lg:px-4 xl:pl-0 gap-2"  
         >  
-          {SuperTitle && (
-            <div className="relative w-fit flex flex-col">  
-              <span className="group-hover:w-12 group-hover:opacity-100 h-1 opacity-0 w-0 transition-all duration-300 bg-black rounded-xl self-end" />  
-              <h4 className="text-xl relative uppercase font-semibold text-neutral-600">{SuperTitle}</h4>  
-              <span className="h-1 w-12 bg-black rounded-xl" />  
-            </div> 
-          )}
+       
           {title && (
             <h2 className="text-2xl md:text-2xl lg:text-4xl text-neutral-900 font-bold">  
               {title} 
@@ -67,12 +61,12 @@ export default function ContentSection({
       </motion.div> 
           {
           descriptions && descriptions.length <= 0 ? (
-            <p className="text-neutral-600 text-sm xl:text-base">
+            <p className="text-neutral-700 text-sm xl:text-base">
               {descriptions}
             </p>
           ) : (
             descriptionList?.map((desc, idx) => (
-              <p key={idx} className="text-neutral-600 text-sm xl:text-base">
+              <p key={idx} className="text-neutral-700 text-sm xl:text-base">
                 {desc}
               </p>
             ))
@@ -107,13 +101,7 @@ export default function ContentSection({
          viewport={{ once: true }}  
          className="flex-1 flex flex-col md:mt-0 max-w-full lg:max-w-2xl w-full lg:px-4 xl:pl-0 gap-2"  
        >  
-         {SuperTitle && (
-           <div className="relative w-fit flex flex-col">  
-             <span className="group-hover:w-12 group-hover:opacity-100 h-1 opacity-0 w-0 transition-all duration-300 bg-black rounded-xl self-end" />  
-             <h4 className="text-xl relative uppercase font-semibold text-neutral-600">{SuperTitle}</h4>  
-             <span className="h-1 w-12 bg-black rounded-xl" />  
-           </div> 
-         )}
+      
          {title && (
            <h2 className="text-2xl md:text-2xl lg:text-4xl text-neutral-900 font-bold">  
              {title} 
@@ -126,12 +114,12 @@ export default function ContentSection({
          )}
          {
          descriptions && descriptions.length <= 0 ? (
-           <p className="text-neutral-600 text-sm xl:text-base">
+           <p className="text-neutral-700 text-sm xl:text-base">
              {descriptions}
            </p>
          ) : (
            descriptionList?.map((desc, idx) => (
-             <p key={idx} className="text-neutral-600 text-sm xl:text-base">
+             <p key={idx} className="text-neutral-700 text-sm xl:text-base">
                {desc}
              </p>
            ))

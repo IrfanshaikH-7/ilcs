@@ -48,7 +48,7 @@ const Home = () => {
       {/* First Section - Hero */}
       <section 
         className={`relative h-[100%] w-full rounded-lg overflow-hidden mt-[100px] md:h-[97.5vh]`}
-        style={{ paddingTop: isMobile ? `${overlayHeight}px` : 0 }}
+        style={{ paddingTop: isMobile ? `${overlayHeight + 8}px` : 0 }}
       >
         {/* Image Overlay Container */}
         <div
@@ -146,11 +146,16 @@ const Home = () => {
         {/* services section */}
      <section  className='md:py-8 space-y-0'>
       {/* section header */}
-  
-     <div className='w-full py-8 h-full flex items-center justify-center'>
-        <h2 className='text-3xl md:text-5xl font-bold w-full max-w-[340px]'>Our Services</h2>
-        <div className='w-full h-1 rounded-full bg-black'/>
+    <div className='w-full py-8 h-full flex flex-col gap-1'>
+        <div className='flex flex-col group w-full max-w-fit mx-auto  mb-2 items-center justify-center'>
+        <h2 className='text-3xl md:text-5xl font-bold w-full max-w-[340px]  mb-1'>Our Services</h2>
+        <div className='bg-green-200 h-1 w-full transition-colors duration-300 rounded-full' />
         </div>
+        <p className='text-sm md:text-base max-w-5xl text-center mx-auto  text-neutral-600'>
+        The Indian Labour Cooperative Society Ltd. (ILCS) offers a wide range of services designed to meet the diverse needs of our clients across various sectors. Our commitment to quality, reliability, and innovation ensures that we deliver exceptional value in every project we undertake. Below are the key services we provide:
+          </p>
+    </div>
+   
 
 
 

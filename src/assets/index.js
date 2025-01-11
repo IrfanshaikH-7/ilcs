@@ -21,6 +21,11 @@ import msme from './images/logos/msme.png'
 import niti_aayog from './images/logos/niti_aayog.png'
 import zed_cert from './images/logos/zed_cert.png'
 
+
+// about
+import about_1 from './images/about/about-1.png'
+import about_2 from './images/about/about-2.png'
+import about_3 from './images/about/about-3.png'
 export {
     ministry_of_corporation,
     ministry_of_labour,
@@ -30,5 +35,19 @@ export {
     amit_shah,
     firefighting_drone,
     sea_plane,
-    logo,firesafety ,agri_drone, eia_logo, pm_1, zed_logo, bharat_entrepreneurship, seventy_five_years, logo_short, thirty_years 
+    logo,firesafety,
+    agri_drone,
+    eia_logo,
+    pm_1,
+    zed_logo,
+    bharat_entrepreneurship, 
+    seventy_five_years, 
+    logo_short, 
+    thirty_years,
+
+
+    // about
+    about_1,
+    about_2,
+    about_3
 }

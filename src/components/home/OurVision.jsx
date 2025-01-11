@@ -48,7 +48,7 @@ const visionData = [
         <div className="w-full rounded-md mx-auto px-4 py-8 space-y-8">
           <div className="max-w-6xl  px-0 md:px-8 rounded-lg">
             <h2 className="text-5xl font-bold mb-4 text-neutral-900">Our Vision</h2>
-            <p className=" text-sm md:text-base text-neutral-800 mb-6">
+            <p className=" text-sm md:text-base text-neutral-700 mb-6">
             The vision of the Indian Labour Cooperative Society Ltd. (ILCS) is to empower and uplift the labor community across India through sustainable and equitable development. Our aim is to foster a cooperative environment where laborers can achieve their full potential, secure their rights, and improve their socio-economic status. We envision a society where every laborer is valued, their contributions are recognized, and they have access to opportunities that enable them to lead dignified and prosperous lives. </p>
           </div>
           <div className=" px-0 md:px-8 rounded-lg">
@@ -59,7 +59,7 @@ const visionData = [
             <h3 className=" font-semibold mb-2 text-sm md:text-base">{index + 1}. {vision.title}</h3>
             <ul className="list-disc pl-6 space-y-1">
               {vision.subPoints.map((point, pointIndex) => (
-                <li key={pointIndex} className="text-neutral-800 text-xs md:text-sm">
+                <li key={pointIndex} className="text-neutral-700 text-xs md:text-sm">
                   {point}
                 </li>
               ))}
